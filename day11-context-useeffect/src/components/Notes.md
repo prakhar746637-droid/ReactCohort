@@ -1,3 +1,5 @@
+portfolio ----> awwwards.com
+----------------------------------------------------------------------------------------------------------------------------------------------
 Context Api
    Just a heigher order functional components
    There are two things in context
@@ -19,3 +21,15 @@ const MyStore = createContext;
 const ContextProvider = ({ Children }) => {
   return <MyStore.Provider>{Children}</MyStore.Provider>;
 };
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+             useEffect hook
+Use for handling side effects, example:-> useEffect(callback,[dependancy array])
+if blank array -> [] -> only one time run
+if                [count] -> jab bhi ciunt update hoga tab chalna
+
+Components life cycle :-
+   1. Mounting phase   --> Render
+   1. updating phase   --> update ho raha hai
+   1. unmountin phase  --> render tree se remove hoga

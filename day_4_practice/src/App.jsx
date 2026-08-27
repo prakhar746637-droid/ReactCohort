@@ -221,8 +221,8 @@ const App = () => {
       <div>
         {
           productData.map((elem)=>{
-            return <ProductsCard product={elem}/>
-            console.log(elem)
+            return <ProductsCard key={elem.id} product={elem}/>
+            
             
           })
         }

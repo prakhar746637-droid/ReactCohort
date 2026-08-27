@@ -216,7 +216,7 @@ const App = () => {
 ]);
 
 const deleteProduct =(id)=>{
- let products = productsData.filter((elem)=> elem.id !==id)
+ let products = productsData.filter((elem)=>elem.id !==id)
  setproductsData(products)
 }
   

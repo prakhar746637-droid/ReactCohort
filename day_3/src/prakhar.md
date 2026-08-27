@@ -1,4 +1,6 @@
-reload : Zero se Start hona;
-Rerender : Only become refresh but data does't reset
-
-rerender karne ke liye "hooks" ka use karte hai
+In a function
+    (parameter)=>{Argument} 
+ but in case of functional components
+    (props)=>{}
+props is a blank object props means propertis
+ -----------------------------------------------------------------------------------------------------------------------------------

@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MyStore } from '../context/MyContext'
 
 const Home = () => {
+   let data = useContext(MyStore)
+   console.log(data);
+   
     console.log('home rendering')
   return (
     <div>
