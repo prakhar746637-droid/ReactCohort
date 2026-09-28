@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import ProductsCard from "./ProductsCard";
 
 const App = () => {
+
+// via fake store 
+
   const [productsData, setproductsData] = useState([
   {
     id: 1,
@@ -216,7 +219,7 @@ const App = () => {
 ]);
 
 const deleteProduct =(id)=>{
- let products = productsData.filter((elem)=>elem.id !==id)
+ let products = productsData.filter((elem) => elem.id !== id)
  setproductsData(products)
 }
   

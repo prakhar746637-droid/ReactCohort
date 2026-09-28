@@ -20,9 +20,9 @@ const App = () => {
       }}>Count Increment</button>
 
       <button onClick={()=>{
-        user.name = "Pullu"
+        user.name = "Prakhar"
         setUser({
-          name: 'pullu'
+          name: 'Prakhar'
         })
       }}>Change Name</button>
     </div>

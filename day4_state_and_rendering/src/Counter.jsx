@@ -21,7 +21,7 @@ const Counter = () => {
        <div>
       <h1>Count is {count}</h1>
       <button onClick={()=>{
-        setCount((prev)=>prev+1)      // impliset return
+        setCount((prev)=>prev+1)    // impliset return
         setCount((prev)=>prev+1)      
         setCount((prev)=>prev+1)      
       }}>Increment</button>
