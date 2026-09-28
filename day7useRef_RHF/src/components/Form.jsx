@@ -1,15 +1,16 @@
+// R-dom have Events and V-dom have Synthetic Events
 import React, { useState, useRef } from "react";
 
 const Form = () => {
   const [products, setProducts] = useState({});
   console.log(products);
-
+ // useRef hook -> uses to fetch real dom element in vertual dom elements
   const formRef = useRef({});
 
   const handelSubmit = (e) => {
     e.preventDefault();
 
-    let obj = { 
+    let obj = {
       pName: formRef.current.ProductName.value,
       Price: formRef.current.Price.value,
       Category: formRef.current.Category.value,
@@ -17,14 +18,16 @@ const Form = () => {
     };
     setProducts(obj);
   };
-
+  // ref matlab apne pairent ka refranse.
   return (
-    <div className="w-80 h-screen">[]
+    <div className="w-80 h-screen">
+      []
       <form
         onSubmit={handelSubmit}
         className="p-6 rounded-2xl flex flex-col bg-gray-300 gap-4"
       >
         <input
+          // ref = {(e)=> console.log(e)} pura input section ka real dom milega
           ref={(e) => (formRef.current.ProductName = e)}
           className="p-2 border border-gray-600 rounded-2xl"
           type="text"

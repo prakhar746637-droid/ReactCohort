@@ -20,7 +20,7 @@ const App = () => {
       }}>Count Increment</button>
 
       <button onClick={()=>{
-        user.name = "Prakhar"
+       
         setUser({
           name: 'Prakhar'
         })
